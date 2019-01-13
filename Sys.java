@@ -15,6 +15,7 @@ public class Sys {
 		this.locais = new ArrayList<>();
 	}
 	
+	//Getters
 	public ArrayList<Aluno> getAlunos(){
 		return this.alunos;
 	}
@@ -31,35 +32,50 @@ public class Sys {
 		return this.locais;
 	}
 	
-	public boolean setAluno(Aluno aluno) {
+	
+	//Isses
+	public boolean isAluno(Aluno aluno) {
 		if(this.alunos.contains(aluno)) {
-			this.alunos.add(aluno);
 			return true;
 		}
 		return false;
 	}
 	
-	public boolean setProfessor(Professor professor) {
+	public boolean isProfessor(Professor professor) {
 		if(this.professores.contains(professor)) {
-			this.professores.add(professor);
 			return true;
 		}
 		return false;
 	}
 	
-	public boolean setSeminario(Seminario seminario) {
+	public boolean isSeminario(Seminario seminario) {
 		if(this.seminarios.contains(seminario)) {
-			this.seminarios.add(seminario);
 			return true;
 		}
 		return false;
 	}
 	
-	public boolean setLocal(Local local) {
+	public boolean isLocal(Local local){
 		if(this.locais.contains(local)) {
-			this.locais.add(local);
 			return true;
 		}
 		return false;
+	}
+	
+	//Setters
+	public void setAluno(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+	
+	public void setProfessor(Professor professor) {
+		this.professores.add(professor);
+	}
+	
+	public void setSeminario(Seminario seminario) {
+		this.seminarios.add(seminario);
+	}
+	
+	public void setLocal(Local local) {
+		this.locais.add(local);
 	}
 }
