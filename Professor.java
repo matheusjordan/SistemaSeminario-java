@@ -6,6 +6,7 @@ public class Professor {
 	private ArrayList<Seminario> seminarios;
 	private String nome;
 	private String especialidade;
+	private int id;
 	
 	public Professor(String nome, String especialidade) {
 		this.nome = nome;
@@ -29,11 +30,21 @@ public class Professor {
 		return this.seminarios;
 	}
 	
+	//Setters
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	//Getters
 	public String getNome() {
 		return this.nome;
 	}
 	
 	public String getEspecialidade() {
 		return this.especialidade;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 }

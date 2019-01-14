@@ -65,17 +65,21 @@ public class Sys {
 	//Setters
 	public void setAluno(Aluno aluno) {
 		this.alunos.add(aluno);
+		aluno.setId(this.alunos.size());
 	}
 	
 	public void setProfessor(Professor professor) {
 		this.professores.add(professor);
+		professor.setId(this.professores.size());
 	}
 	
 	public void setSeminario(Seminario seminario) {
 		this.seminarios.add(seminario);
+		seminario.setId(this.seminarios.size());
 	}
 	
 	public void setLocal(Local local) {
 		this.locais.add(local);
+		local.setId(this.locais.size());
 	}
 }

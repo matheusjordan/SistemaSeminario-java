@@ -4,14 +4,25 @@ public class Aluno {
 	private Seminario seminario;
 	private int idade;
 	private String nome;
+	private int id;
 	
 	public Aluno(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
 	}
 	
+	//Setters
 	public void setSeminario(Seminario seminario) {
 		this.seminario = seminario;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	//Getters
+	public int getId() {
+		return this.id;
 	}
 	
 	public Seminario getSeminario() {

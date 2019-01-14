@@ -7,6 +7,7 @@ public class Seminario {
 	private Professor professor;
 	private Local local;
 	private String titulo;
+	private int id;
 	
 	public Seminario(Professor professor, Local local, String titulo) {
 		this.professor = professor;
@@ -27,7 +28,13 @@ public class Seminario {
 		return false;
 	}
 	
-	public ArrayList<Aluno> getAluno(){
+	//Setters
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	//Getters
+	public ArrayList<Aluno> getAlunos(){
 		return this.alunos;
 	}
 	
@@ -41,5 +48,9 @@ public class Seminario {
 	
 	public String getTitulo() {
 		return this.titulo;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 }
